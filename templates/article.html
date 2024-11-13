@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ article['title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="banner" onclick="window.location.href = '/'"></div>
+    <div class="container">
+        <h1>{{ article['title'] }}</h1>
+        <p>{{ article['content'] }}</p>
+    </div>
+    <footer class="bg-light mt-4">
+        <div class="row">
+            <div class="col-md-4 text-center text-md-center">
+                <p>Nama saya Ahmad Hanif Nur'aidzin tinggal di Cilegon, ID kegiatan MSIB saya adalah 11762488</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <p>Hobi saya adalah:</p>
+                <ul class="list-unstyled">
+                    <li>Badminton</li>
+                    <li>Mendengarkan Musik</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-center text-md-center">
+                <p>Kontak kami:</p>
+                <p>Email: ahmadhanifnuraidzin@gmail.com</p>
+                <p>Telepon: +62 81299425347</p>
+                <p>IG : @ahmadhanif.12</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <a href="/" class="nav-link px-2 text-muted">Home Page</a>
+            <p>&copy; 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
